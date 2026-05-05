@@ -5,6 +5,7 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Generic 3D BFS light propagation with two-phase removal for voxel engines"
 repository = "https://github.com/sevenevesai/voxel-light"
+homepage = "https://seveneves.ai/crates"
 readme = "README.md"
 keywords = ["voxel", "lighting", "bfs", "flood-fill", "gamedev"]
 categories = ["game-development", "algorithms"]
