@@ -1,0 +1,24 @@
+[package]
+name = "voxel-light"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Generic 3D BFS light propagation with two-phase removal for voxel engines"
+keywords = ["voxel", "lighting", "bfs", "flood-fill", "gamedev"]
+categories = ["game-development", "algorithms"]
+
+[features]
+default = ["std"]
+std = ["ahash"]
+sky = []
+colored = []
+
+[dependencies]
+ahash = { version = "0.8", optional = true }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "propagation"
+harness = false
